@@ -1,0 +1,34 @@
+<themeCapabilities>
+   
+   <themeName>Sonic Mania</themeName>
+
+   <aspectRatio>16:9</aspectRatio>
+   <aspectRatio>16:10</aspectRatio>
+   <aspectRatio>4:3</aspectRatio>
+
+   <transitions name="transitions">
+      <label>transitions</label>
+      <selectable>false</selectable>
+      <systemToSystem>instant</systemToSystem>
+      <systemToGamelist>instant</systemToGamelist>
+      <gamelistToGamelist>instant</gamelistToGamelist>
+      <gamelistToSystem>instant</gamelistToSystem>
+      <startupToSystem>instant</startupToSystem>
+      <startupToGamelist>instant</startupToGamelist>
+   </transitions>
+   <suppressTransitionProfiles>
+      <entry>builtin-instant</entry>
+      <entry>builtin-slide</entry>
+      <entry>builtin-fade</entry>
+   </suppressTransitionProfiles>
+
+   <variant name="backgroundArtVideo">
+      <label>Background Video</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="backgroundArtScreenshot">
+      <label>Background Screenshot</label>
+      <selectable>true</selectable>
+   </variant>
+
+</themeCapabilities>

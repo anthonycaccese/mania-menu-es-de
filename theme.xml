@@ -1,0 +1,166 @@
+<!--
+theme name:    Sonic Mania (ES-DE Edition)
+author:        anthonycaccese
+inspired by:   The menu ui from Sonic Mania
+license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
+-->
+
+<theme>
+
+   <variables>
+      <spacerImage>./_inc/images/space.png</spacerImage>
+      <font>./_inc/fonts/sonic-mania-improved.ttf</font>
+   </variables>
+
+   <view name="system,gamelist">
+      <image name="background-color">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>${spacerImage}</path>
+         <tile>true</tile>
+         <color>000000</color>
+         <zIndex>0</zIndex>
+      </image>
+      <image name="background-mask">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <path>./_inc/images/background-mask.svg</path>
+         <zIndex>2</zIndex>
+      </image>
+      <text name="title,system-name,auto-collection-name,custom-collection-name">
+         <origin>0.5 0</origin>
+         <pos>0.5 0.06</pos>
+         <fontSize>0.06</fontSize>
+         <fontPath>${font}</fontPath>
+      </text>
+      <helpsystem name="help">
+         <origin>0.5 0</origin>
+         <pos>0.5 0.16</pos>
+         <fontSize>0.025</fontSize>
+         <fontPath>${font}</fontPath>
+         <textColor>00000088</textColor>
+         <iconColor>00000088</iconColor>
+      </helpsystem>
+      <carousel name="carousel">
+         <origin>0 0</origin>
+         <pos>0.5375 0.263888888888889</pos><!-- 688 190 -->
+         <size>0.640625 0.675</size><!-- 820 486 -->
+         <color>00000000</color>
+         <fontSize>0.045</fontSize>
+         <fontPath>${font}</fontPath>
+         <textColor>ffffff</textColor>
+         <textBackgroundColor>00000000</textBackgroundColor>
+         <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
+         <itemSize>0.4921875 0.097222222222222</itemSize><!-- 630 70  -->
+         <itemScale>1</itemScale>
+         <itemTransitions>instant</itemTransitions>
+         <type>vertical</type>
+         <maxItemCount>4.6555</maxItemCount>
+         <itemHorizontalAlignment>left</itemHorizontalAlignment>
+      </carousel>
+   </view>
+   <variant name="backgroundArtScreenshot">
+      <view name="system,gamelist">
+         <image name="background-art">
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.5</pos>
+            <maxSize>1.4 2</maxSize>
+            <zIndex>1</zIndex>
+         </image>
+      </view>
+   </variant>
+   <variant name="backgroundArtVideo">
+      <view name="system,gamelist">
+         <video name="background-art">
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.5</pos>
+            <maxSize>1.4 2</maxSize>
+            <zIndex>1</zIndex>
+         </video>
+      </view>
+   </variant>
+
+   <view name="system">
+      <text name="title">
+         <text>EmulationStation-DE</text>
+      </text>
+      <carousel name="carousel">
+         <text>${system.fullName}</text>
+      </carousel>
+      <gameselector name="selector-random">
+         <selection>random</selection>
+      </gameselector>
+   </view>
+   <variant name="backgroundArtScreenshot">
+      <view name="system">
+         <image name="background-art">
+            <gameselector>selector-random</gameselector>
+            <imageType>screenshot</imageType>
+         </image>
+      </view>
+   </variant>
+   <variant name="backgroundArtVideo">
+      <view name="system">
+         <video name="background-art">
+            <gameselector>selector-random</gameselector>
+            <imageType>screenshot</imageType>
+            <delay>3</delay>
+            <pillarboxes>false</pillarboxes>
+         </video>
+      </view>
+   </variant>
+
+   <view name="gamelist">
+      <text name="system-name">
+         <text>${system.fullName.noCollections}</text>
+      </text>
+      <text name="auto-collection-name">
+         <text>${system.fullName.autoCollections}</text>
+         <letterCase>capitalize</letterCase>
+      </text>
+      <text name="custom-collection-name">
+         <text>${system.fullName.customCollections}</text>
+      </text>
+      <carousel name="carousel">
+         <imageType>none</imageType>
+      </carousel>
+      <badges name="badges">
+         <origin>0 0</origin>
+         <pos>0.015625 0.297222222222222</pos><!-- 20 214 -->
+         <size>0.234375 0.041666666666667</size><!-- 300 30 -->
+         <itemMargin>0.004 0.004</itemMargin>
+         <lines>1</lines>
+         <itemsPerLine>8</itemsPerLine>
+         <slots>all</slots>
+         <customBadgeIcon badge="folder">./_inc/images/badge-folder.svg</customBadgeIcon>
+         <customBadgeIcon badge="broken">./_inc/images/badge-broken.svg</customBadgeIcon>
+         <customBadgeIcon badge="completed">./_inc/images/badge-completed.svg</customBadgeIcon>
+         <customBadgeIcon badge="favorite">./_inc/images/badge-favorite.svg</customBadgeIcon>
+         <customBadgeIcon badge="kidgame">./_inc/images/badge-kidgame.svg</customBadgeIcon>
+         <customBadgeIcon badge="collection">./_inc/images/badge-collection.svg</customBadgeIcon>
+         <customBadgeIcon badge="controller">./_inc/images/badge-controller.svg</customBadgeIcon>
+         <customBadgeIcon badge="altemulator">./_inc/images/badge-altemulator.svg</customBadgeIcon>
+         <controllerSize>0.8</controllerSize>
+         <folderLinkSize>0.8</folderLinkSize>
+      </badges>
+   </view>
+   <variant name="backgroundArtScreenshot">
+      <view name="gamelist">
+         <image name="background-art">
+            <imageType>screenshot</imageType>
+         </image>
+      </view>
+   </variant>
+   <variant name="backgroundArtVideo">
+      <view name="gamelist">
+         <video name="background-art">
+            <imageType>screenshot</imageType>
+            <delay>3</delay>
+            <pillarboxes>false</pillarboxes>
+         </video>
+      </view>
+   </variant>
+
+</theme>
