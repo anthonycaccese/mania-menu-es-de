@@ -45,7 +45,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </helpsystem>
       <carousel name="carousel">
          <origin>0 0</origin>
-         <pos>0.5375 0.263888888888889</pos><!-- 688 190 -->
+         <pos>0.578125 0.263888888888889</pos><!-- 740 190 -->
          <size>0.640625 0.675</size><!-- 820 486 -->
          <color>00000000</color>
          <fontSize>0.045</fontSize>
