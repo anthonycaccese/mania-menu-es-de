@@ -9,7 +9,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
 
    <variables>
       <spacerImage>./_inc/images/space.png</spacerImage>
-      <font>./_inc/fonts/sonic-mania-improved.ttf</font>
+      <font>./_inc/fonts/sonic-mania-bitmap.ttf</font>
    </variables>
 
    <view name="system,gamelist">
@@ -29,44 +29,41 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <path>./_inc/images/background-mask.svg</path>
          <zIndex>2</zIndex>
       </image>
-      <text name="title,system-name,auto-collection-name,custom-collection-name">
-         <origin>0.5 0</origin>
-         <pos>0.5 0.06</pos>
-         <fontSize>0.06</fontSize>
-         <fontPath>${font}</fontPath>
-      </text>
       <helpsystem name="help">
          <origin>0.5 0</origin>
-         <pos>0.5 0.16</pos>
-         <fontSize>0.025</fontSize>
-         <fontPath>${font}</fontPath>
-         <textColor>00000088</textColor>
-         <iconColor>00000088</iconColor>
+         <pos>0.5 0.2</pos>
+         <fontSize>0.02</fontSize>
+         <textColor>000000</textColor>
+         <iconColor>000000</iconColor>
       </helpsystem>
       <carousel name="carousel">
          <origin>0 0</origin>
-         <pos>0.578125 0.263888888888889</pos><!-- 740 190 -->
-         <size>0.640625 0.675</size><!-- 820 486 -->
+         <pos>0.37 0.263888888888889</pos>
+         <size>0.64 0.675</size><!-- 820 486 -->
          <color>00000000</color>
-         <fontSize>0.045</fontSize>
+         <fontSize>0.036</fontSize>
          <fontPath>${font}</fontPath>
          <textColor>ffffff</textColor>
-         <textBackgroundColor>00000000</textBackgroundColor>
+         <textSelectedColor>ffffff</textSelectedColor>
          <letterCaseAutoCollections>capitalize</letterCaseAutoCollections>
-         <itemSize>0.4921875 0.097222222222222</itemSize><!-- 630 70  -->
+         <lineSpacing>1</lineSpacing>
+         <itemSize>0.42 0.097</itemSize><!-- 530 70  -->
          <itemScale>1</itemScale>
          <itemTransitions>instant</itemTransitions>
+         <unfocusedItemOpacity>0.3</unfocusedItemOpacity>
          <type>vertical</type>
          <maxItemCount>4.6555</maxItemCount>
          <itemHorizontalAlignment>left</itemHorizontalAlignment>
+         <itemDiagonalOffset>0.082</itemDiagonalOffset>
+         <horizontalOffset>0.32</horizontalOffset>
       </carousel>
    </view>
    <variant name="backgroundArtScreenshot">
       <view name="system,gamelist">
          <image name="background-art">
             <origin>0.5 0.5</origin>
-            <pos>0.5 0.5</pos>
-            <maxSize>1.4 2</maxSize>
+            <pos>0.34609375 0.601388888888889</pos><!-- 443 433 -->
+            <maxSize>1 2</maxSize><!-- 890 668 -->
             <zIndex>1</zIndex>
          </image>
       </view>
@@ -75,15 +72,25 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <view name="system,gamelist">
          <video name="background-art">
             <origin>0.5 0.5</origin>
-            <pos>0.5 0.5</pos>
-            <maxSize>1.4 2</maxSize>
+            <pos>0.34609375 0.601388888888889</pos><!-- 443 433 -->
+            <maxSize>1 2</maxSize><!-- 890 668 -->
             <zIndex>1</zIndex>
          </video>
       </view>
    </variant>
 
    <view name="system">
-      <text name="title">
+      <text name="system-name">
+         <origin>0.5 0</origin>
+         <pos>0.5 0.06</pos>
+         <size>.32 .09</size>
+         <fontSize>0.036</fontSize>
+         <fontPath>${font}</fontPath>
+         <color>ffffff</color>
+         <lineSpacing>1</lineSpacing>
+         <horizontalAlignment>center</horizontalAlignment>
+      </text>
+      <text name="system-name">
          <text>EmulationStation-DE</text>
       </text>
       <carousel name="carousel">
@@ -113,15 +120,22 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    </variant>
 
    <view name="gamelist">
+      <text name="system-name,auto-collection-name,custom-collection-name">
+         <origin>0.5 0</origin>
+         <pos>0.5 0.06</pos>
+         <size>.32 .09</size>
+         <fontSize>0.036</fontSize>
+         <fontPath>${font}</fontPath>
+         <color>ffffff</color>
+         <lineSpacing>1</lineSpacing>
+         <horizontalAlignment>center</horizontalAlignment>
+      </text>
       <text name="system-name">
          <text>${system.fullName.noCollections}</text>
       </text>
       <text name="auto-collection-name">
          <text>${system.fullName.autoCollections}</text>
          <letterCase>capitalize</letterCase>
-      </text>
-      <text name="custom-collection-name">
-         <text>${system.fullName.customCollections}</text>
       </text>
       <carousel name="carousel">
          <imageType>none</imageType>
