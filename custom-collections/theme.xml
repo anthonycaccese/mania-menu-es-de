@@ -2,10 +2,30 @@
    <include>./../theme.xml</include>
    <view name="gamelist">
       <text name="custom-collection-name">
-         <pos>0.5 0.082</pos>
          <metadata>systemFullname</metadata>
-         <fontSize>0.026</fontSize>
          <color>ffffff99</color>
       </text>
    </view>
+   <aspectRatio name="16:9">
+      <view name="gamelist">
+         <text name="system-name,auto-collection-name,custom-collection-name">
+            <pos>0.5 0.042222222222222</pos>
+         </text>
+         <text name="custom-collection-name">
+            <pos>0.5 0.077777777777778</pos>
+            <fontSize>0.026</fontSize>
+         </text>
+      </view>
+   </aspectRatio>
+   <aspectRatio name="16:10">
+      <view name="gamelist">
+         <text name="system-name,auto-collection-name,custom-collection-name">
+            <pos>0.5 0.088</pos>
+         </text>
+         <text name="custom-collection-name">
+            <pos>0.5 0.12</pos>
+            <fontSize>0.0234</fontSize>
+         </text>
+      </view>
+   </aspectRatio>
 </theme>
