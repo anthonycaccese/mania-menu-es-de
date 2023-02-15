@@ -23,11 +23,15 @@
    </suppressTransitionProfiles>
 
    <variant name="backgroundArtVideo">
-      <label>Background Video</label>
+      <label>Video</label>
       <selectable>true</selectable>
    </variant>
    <variant name="backgroundArtScreenshot">
-      <label>Background Screenshot</label>
+      <label>Screenshot</label>
+      <selectable>true</selectable>
+   </variant>
+   <variant name="backgroundArtFanart">
+      <label>Fanart</label>
       <selectable>true</selectable>
    </variant>
 

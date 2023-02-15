@@ -8,7 +8,7 @@
          <selection>lastplayed</selection>
       </gameselector>
    </view>
-   <variant name="backgroundArtScreenshot">
+   <variant name="backgroundArtScreenshot,backgroundArtFanart">
       <view name="system">
          <image name="background-art">
             <gameselector>selector-lastplayed</gameselector>

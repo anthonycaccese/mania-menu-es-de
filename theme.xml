@@ -19,7 +19,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <size>1 1</size>
          <path>${spacerImage}</path>
          <tile>true</tile>
-         <color>000000</color>
+         <color>333333</color>
          <zIndex>0</zIndex>
       </image>
       <image name="background-mask">
@@ -49,7 +49,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <itemHorizontalAlignment>left</itemHorizontalAlignment>
       </carousel>
    </view>
-   <variant name="backgroundArtScreenshot">
+   <variant name="backgroundArtScreenshot,backgroundArtFanart">
       <view name="system,gamelist">
          <image name="background-art">
             <origin>0.5 0.5</origin>
@@ -64,6 +64,8 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <origin>0.5 0.5</origin>
             <maxSize>1 2</maxSize>
             <zIndex>1</zIndex>
+            <delay>1</delay>
+            <pillarboxes>false</pillarboxes>
          </video>
       </view>
    </variant>
@@ -94,13 +96,19 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </image>
       </view>
    </variant>
+   <variant name="backgroundArtFanart">
+      <view name="system">
+         <image name="background-art">
+            <gameselector>selector-random</gameselector>
+            <imageType>fanart,screenshot</imageType>
+         </image>
+      </view>
+   </variant>
    <variant name="backgroundArtVideo">
       <view name="system">
          <video name="background-art">
             <gameselector>selector-random</gameselector>
             <imageType>screenshot</imageType>
-            <delay>3</delay>
-            <pillarboxes>false</pillarboxes>
          </video>
       </view>
    </variant>
@@ -148,12 +156,17 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </image>
       </view>
    </variant>
+   <variant name="backgroundArtFanart">
+      <view name="gamelist">
+         <image name="background-art">
+            <imageType>fanart,screenshot</imageType>
+         </image>
+      </view>
+   </variant>
    <variant name="backgroundArtVideo">
       <view name="gamelist">
          <video name="background-art">
             <imageType>screenshot</imageType>
-            <delay>3</delay>
-            <pillarboxes>false</pillarboxes>
          </video>
       </view>
    </variant>
@@ -269,7 +282,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </badges>
       </view>
    </aspectRatio>
-   <variant name="backgroundArtScreenshot">
+   <variant name="backgroundArtScreenshot,backgroundArtFanart">
       <aspectRatio name="16:9">
          <view name="system,gamelist">
             <image name="background-art">
