@@ -47,8 +47,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <unfocusedItemOpacity>0.3</unfocusedItemOpacity>
          <type>vertical</type>
          <itemHorizontalAlignment>left</itemHorizontalAlignment>
-         <itemDiagonalOffset>0.082</itemDiagonalOffset>
-         <horizontalOffset>0.32</horizontalOffset>
       </carousel>
    </view>
    <variant name="backgroundArtScreenshot">
@@ -170,6 +168,8 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <size>0.64 0.675</size><!-- 820 486 -->
             <fontSize>0.036</fontSize>
             <itemSize>0.42 0.097</itemSize><!-- 530 70  -->
+            <itemDiagonalOffset>0.082</itemDiagonalOffset>
+            <horizontalOffset>0.32</horizontalOffset>
          </carousel>
          <helpsystem name="help">
             <pos>0.5 0.2</pos>
@@ -195,6 +195,43 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </badges>
       </view>
    </aspectRatio>
+   <aspectRatio name="4:3">
+      <view name="system,gamelist">
+         <image name="background-mask">
+            <path>./_inc/images/background-mask-4-3.svg</path>
+         </image>
+         <carousel name="carousel">
+            <pos>0.160416666666667 0.263888888888889</pos>
+            <size>0.853333333333333 0.675</size>
+            <fontSize>0.036</fontSize>
+            <itemSize>0.56 0.097</itemSize>
+            <itemDiagonalOffset>0.109333333333333</itemDiagonalOffset>
+            <horizontalOffset>0.32</horizontalOffset>
+         </carousel>
+         <helpsystem name="help">
+            <pos>0.5 0.2</pos>
+            <fontSize>0.02</fontSize>
+         </helpsystem>
+      </view>
+      <view name="system">
+         <text name="system-name">
+            <pos>0.5 0.06</pos>
+            <size>0.426666666666667 0.09</size>
+            <fontSize>0.036</fontSize>
+         </text>
+      </view>
+      <view name="gamelist">
+         <text name="system-name,auto-collection-name,custom-collection-name">
+            <pos>0.5 0.06</pos>
+            <size>0.426666666666667 .09</size>
+            <fontSize>0.036</fontSize>
+         </text>
+         <badges name="badges">
+            <pos>0.020833333333333 0.297222222222222</pos><!-- 20 214 -->
+            <size>0.3125 0.041666666666667</size><!-- 300 30 -->
+         </badges>
+      </view>
+   </aspectRatio>
    <aspectRatio name="16:10">
       <view name="system,gamelist">
          <image name="background-mask">
@@ -205,6 +242,8 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <size>0.64 0.6075</size><!-- 820 486 -->
             <fontSize>0.0324</fontSize>
             <itemSize>0.42 0.0875</itemSize><!-- 530 70  -->
+            <itemDiagonalOffset>0.082</itemDiagonalOffset>
+            <horizontalOffset>0.32</horizontalOffset>
          </carousel>
          <helpsystem name="help">
             <pos>0.5 0.23</pos>
@@ -238,6 +277,13 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             </image>
          </view>
       </aspectRatio>
+      <aspectRatio name="4:3">
+         <view name="system,gamelist">
+            <image name="background-art">
+               <pos>0.128125 0.601388888888889</pos><!-- 123 433 -->
+            </image>
+         </view>
+      </aspectRatio>
       <aspectRatio name="16:10">
          <view name="system,gamelist">
             <image name="background-art">
@@ -251,6 +297,13 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <view name="system,gamelist">
             <video name="background-art">
                <pos>0.34609375 0.59125</pos><!-- 443 473 -->
+            </video>
+         </view>
+      </aspectRatio>
+      <aspectRatio name="4:3">
+         <view name="system,gamelist">
+            <video name="background-art">
+               <pos>0.128125 0.59125</pos><!-- 123 473 -->
             </video>
          </view>
       </aspectRatio>

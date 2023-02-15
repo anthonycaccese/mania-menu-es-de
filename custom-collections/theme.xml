@@ -17,6 +17,17 @@
          </text>
       </view>
    </aspectRatio>
+   <aspectRatio name="4:3">
+      <view name="gamelist">
+         <text name="system-name,auto-collection-name,custom-collection-name">
+            <pos>0.5 0.042222222222222</pos>
+         </text>
+         <text name="custom-collection-name">
+            <pos>0.5 0.077777777777778</pos>
+            <fontSize>0.026</fontSize>
+         </text>
+      </view>
+   </aspectRatio>
    <aspectRatio name="16:10">
       <view name="gamelist">
          <text name="system-name,auto-collection-name,custom-collection-name">
