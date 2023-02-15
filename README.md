@@ -2,7 +2,11 @@
 A simple theme for the version of EmulationStation used in [ES-DE](https://es-de.org/) v2.x.  The design is inspired by the Menu UI from [Sonic Mania](https://www.sega.com/games/sonicmania).
 
 ## **Preview**
-<img alt="Screenshot 2023-02-14 at 9 56 45 PM" src="https://user-images.githubusercontent.com/1454947/218915652-5844c573-0218-4de1-8ba2-f8a6c0158504.png">
+| Aspect Ratio | Preview |
+|----|----|
+| 16:9 | <img alt="16:9" src="https://user-images.githubusercontent.com/1454947/218916985-0faf02c5-fc65-476d-95fd-790a69698a43.png"> | 
+| 16:10 | <img alt="16:10" src="https://user-images.githubusercontent.com/1454947/218917003-8bf0816b-ce9d-44e4-ae69-416959e50755.png"> | 
+| 4:3 | <img alt="4:3" src="https://user-images.githubusercontent.com/1454947/218917014-c0173ee1-09f1-4a22-a1c2-58c03bde4770.png"> | 
 
 ## **Acknowledgments**
 * This theme was heavily inspired by the awesome menu ui in [Sonic Mania](https://www.sega.com/games/sonicmania). 
