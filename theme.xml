@@ -64,7 +64,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
             <origin>0.5 0.5</origin>
             <maxSize>1 2</maxSize>
             <zIndex>1</zIndex>
-            <delay>1</delay>
+            <delay>3</delay>
             <pillarboxes>false</pillarboxes>
          </video>
       </view>
@@ -300,7 +300,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <aspectRatio name="16:10">
          <view name="system,gamelist">
             <image name="background-art">
-               <pos>0.34609375 0.601388888888889</pos><!-- 443 433 -->
+               <pos>0.34609375 0.59125</pos><!-- 443 473 -->
             </image>
          </view>
       </aspectRatio>
@@ -309,14 +309,14 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <aspectRatio name="16:9">
          <view name="system,gamelist">
             <video name="background-art">
-               <pos>0.34609375 0.59125</pos><!-- 443 473 -->
+               <pos>0.34609375 0.601388888888889</pos><!-- 443 433 -->
             </video>
          </view>
       </aspectRatio>
       <aspectRatio name="4:3">
          <view name="system,gamelist">
             <video name="background-art">
-               <pos>0.128125 0.59125</pos><!-- 123 473 -->
+               <pos>0.128125 0.601388888888889</pos><!-- 123 433 -->
             </video>
          </view>
       </aspectRatio>
