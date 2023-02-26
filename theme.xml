@@ -47,6 +47,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <unfocusedItemOpacity>0.3</unfocusedItemOpacity>
          <type>vertical</type>
          <itemHorizontalAlignment>left</itemHorizontalAlignment>
+         <fastScrolling>true</fastScrolling>
       </carousel>
    </view>
    <variant name="backgroundArtScreenshot,backgroundArtFanart">
