@@ -12,6 +12,22 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <font>./_inc/fonts/sonic-mania-bitmap.ttf</font>
    </variables>
 
+   <colorScheme name="yellow">
+      <variables>
+         <backgroundColor>yellow</backgroundColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="blue">
+      <variables>
+         <backgroundColor>blue</backgroundColor>
+      </variables>
+   </colorScheme>
+   <colorScheme name="purple">
+      <variables>
+         <backgroundColor>purple</backgroundColor>
+      </variables>
+   </colorScheme>
+
    <view name="system,gamelist">
       <image name="background-color">
          <origin>0 0</origin>
@@ -175,7 +191,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <aspectRatio name="16:9">
       <view name="system,gamelist">
          <image name="background-mask">
-            <path>./_inc/images/background-mask-16-9.svg</path>
+            <path>./_inc/images/background-mask-16-9-${backgroundColor}.svg</path>
          </image>
          <carousel name="carousel">
             <pos>0.37 0.263888888888889</pos>
@@ -212,7 +228,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <aspectRatio name="4:3">
       <view name="system,gamelist">
          <image name="background-mask">
-            <path>./_inc/images/background-mask-4-3.svg</path>
+            <path>./_inc/images/background-mask-4-3-${backgroundColor}.svg</path>
          </image>
          <carousel name="carousel">
             <pos>0.160416666666667 0.263888888888889</pos>
@@ -249,7 +265,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <aspectRatio name="16:10">
       <view name="system,gamelist">
          <image name="background-mask">
-            <path>./_inc/images/background-mask-16-10.svg</path>
+            <path>./_inc/images/background-mask-16-10-${backgroundColor}.svg</path>
          </image>
          <carousel name="carousel">
             <pos>0.37 0.2875</pos>

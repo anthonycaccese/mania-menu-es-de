@@ -6,6 +6,16 @@
    <aspectRatio>16:10</aspectRatio>
    <aspectRatio>4:3</aspectRatio>
 
+   <colorScheme name="yellow">
+      <label>Yellow</label>
+   </colorScheme>
+   <colorScheme name="blue">
+      <label>Blue</label>
+   </colorScheme>
+   <colorScheme name="purple">
+      <label>Purple</label>
+   </colorScheme>
+
    <transitions name="transitions">
       <label>transitions</label>
       <selectable>false</selectable>
