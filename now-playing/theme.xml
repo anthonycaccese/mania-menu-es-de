@@ -1,7 +1,7 @@
 <theme>
    <include>./../theme.xml</include>
    <view name="system">
-      <carousel name="custom-collection-name">
+      <carousel name="carousel">
          <text>Now Playing</text>
       </carousel>
       <gameselector name="selector-lastplayed">
