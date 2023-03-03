@@ -69,8 +69,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <variant name="backgroundArtScreenshot,backgroundArtFanart">
       <view name="system,gamelist">
          <image name="background-art">
-            <origin>0.5 0.5</origin>
-            <maxSize>1 2</maxSize>
+            <origin>0 0</origin>
             <zIndex>1</zIndex>
          </image>
       </view>
@@ -78,8 +77,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    <variant name="backgroundArtVideo">
       <view name="system,gamelist">
          <video name="background-art">
-            <origin>0.5 0.5</origin>
-            <maxSize>1 2</maxSize>
+            <origin>0 0</origin>
             <zIndex>1</zIndex>
             <delay>3</delay>
             <pillarboxes>false</pillarboxes>
@@ -303,21 +301,24 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <aspectRatio name="16:9">
          <view name="system,gamelist">
             <image name="background-art">
-               <pos>0.34609375 0.601388888888889</pos><!-- 443 433 -->
+               <cropSize>0.6921875 0.675</cropSize><!-- 886 486 -->
+               <pos>0 0.263888888888889</pos><!-- 0 190 -->
             </image>
          </view>
       </aspectRatio>
       <aspectRatio name="4:3">
          <view name="system,gamelist">
             <image name="background-art">
-               <pos>0.128125 0.601388888888889</pos><!-- 123 433 -->
+               <cropSize>0.589583333333333 0.675</cropSize><!-- 566 486 -->
+               <pos>0 0.263888888888889</pos><!-- 0 190 -->
             </image>
          </view>
       </aspectRatio>
       <aspectRatio name="16:10">
          <view name="system,gamelist">
             <image name="background-art">
-               <pos>0.34609375 0.59125</pos><!-- 443 473 -->
+               <cropSize>0.6921875 0.6075</cropSize><!-- 886 486 -->
+               <pos>0 0.2875</pos><!-- 0 230 -->
             </image>
          </view>
       </aspectRatio>
@@ -326,21 +327,24 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <aspectRatio name="16:9">
          <view name="system,gamelist">
             <video name="background-art">
-               <pos>0.34609375 0.601388888888889</pos><!-- 443 433 -->
+               <cropSize>0.6921875 0.675</cropSize><!-- 886 486 -->
+               <pos>0 0.263888888888889</pos><!-- 0 190 -->
             </video>
          </view>
       </aspectRatio>
       <aspectRatio name="4:3">
          <view name="system,gamelist">
             <video name="background-art">
-               <pos>0.128125 0.601388888888889</pos><!-- 123 433 -->
+               <cropSize>0.589583333333333 0.675</cropSize><!-- 566 486 -->
+               <pos>0 0.263888888888889</pos><!-- 0 190 -->
             </video>
          </view>
       </aspectRatio>
       <aspectRatio name="16:10">
          <view name="system,gamelist">
             <video name="background-art">
-               <pos>0.34609375 0.59125</pos><!-- 443 473 -->
+               <cropSize>0.6921875 0.6075</cropSize><!-- 886 486 -->
+               <pos>0 0.2875</pos><!-- 0 230 -->
             </video>
          </view>
       </aspectRatio>
