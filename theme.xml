@@ -48,6 +48,12 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <origin>0.5 0</origin>
          <textColor>000000</textColor>
          <iconColor>000000</iconColor>
+         <originDimmed>0.5 0</originDimmed>
+         <posDimmed>0.5 0.94</posDimmed>
+         <textColorDimmed>cccccc</textColorDimmed>
+         <iconColorDimmed>cccccc</iconColorDimmed>
+         <fontSizeDimmed>0.026</fontSizeDimmed>
+         <opacityDimmed>1.0</opacityDimmed>
       </helpsystem>
       <carousel name="carousel">
          <origin>0 0</origin>
