@@ -100,7 +100,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <horizontalAlignment>center</horizontalAlignment>
       </text>
       <text name="system-name">
-         <text>EmulationStation-DE</text>
+         <text>ES-DE</text>
       </text>
       <carousel name="carousel">
          <text>${system.fullName}</text>
