@@ -44,5 +44,9 @@
       <label>Fanart</label>
       <selectable>true</selectable>
    </variant>
+   <variant name="backgroundArtCustom">
+      <label>Custom</label>
+      <selectable>true</selectable>
+   </variant>
 
 </themeCapabilities>

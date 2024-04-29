@@ -90,6 +90,22 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </video>
       </view>
    </variant>
+   <variant name="backgroundArtCustom">
+      <view name="system">
+         <image name="background-art">
+            <origin>0 0</origin>
+            <zIndex>1</zIndex>
+         </image>
+      </view>
+      <view name="gamelist">
+         <video name="background-art">
+            <origin>0 0</origin>
+            <zIndex>1</zIndex>
+            <delay>3</delay>
+            <pillarboxes>false</pillarboxes>
+         </video>
+      </view>
+   </variant>
 
    <view name="system">
       <text name="system-name">
@@ -105,12 +121,12 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       <carousel name="carousel">
          <text>${system.fullName}</text>
       </carousel>
-      <gameselector name="selector-random">
-         <selection>random</selection>
-      </gameselector>
    </view>
    <variant name="backgroundArtScreenshot">
       <view name="system">
+         <gameselector name="selector-random">
+            <selection>random</selection>
+         </gameselector>
          <image name="background-art">
             <gameselector>selector-random</gameselector>
             <imageType>screenshot</imageType>
@@ -119,6 +135,9 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    </variant>
    <variant name="backgroundArtFanart">
       <view name="system">
+         <gameselector name="selector-random">
+            <selection>random</selection>
+         </gameselector>
          <image name="background-art">
             <gameselector>selector-random</gameselector>
             <imageType>fanart,screenshot</imageType>
@@ -127,10 +146,20 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    </variant>
    <variant name="backgroundArtVideo">
       <view name="system">
+         <gameselector name="selector-random">
+            <selection>random</selection>
+         </gameselector>
          <video name="background-art">
             <gameselector>selector-random</gameselector>
             <imageType>screenshot</imageType>
          </video>
+      </view>
+   </variant>
+   <variant name="backgroundArtCustom">
+      <view name="system">
+         <image name="background-art">
+            <path>./_inc/images/custom-backgrounds/${system.theme}.webp</path>
+         </image>
       </view>
    </variant>
 
@@ -185,7 +214,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          </image>
       </view>
    </variant>
-   <variant name="backgroundArtVideo">
+   <variant name="backgroundArtVideo,backgroundArtCustom">
       <view name="gamelist">
          <video name="background-art">
             <imageType>screenshot</imageType>
@@ -349,6 +378,50 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
       </aspectRatio>
       <aspectRatio name="16:10">
          <view name="system,gamelist">
+            <video name="background-art">
+               <cropSize>0.6921875 0.6075</cropSize><!-- 886 486 -->
+               <pos>0 0.2875</pos><!-- 0 230 -->
+            </video>
+         </view>
+      </aspectRatio>
+   </variant>
+   <variant name="backgroundArtCustom">
+      <aspectRatio name="16:9">
+         <view name="system">
+            <image name="background-art">
+               <cropSize>0.6921875 0.675</cropSize><!-- 886 486 -->
+               <pos>0 0.263888888888889</pos><!-- 0 190 -->
+            </image>
+         </view>
+         <view name="gamelist">
+            <video name="background-art">
+               <cropSize>0.6921875 0.675</cropSize><!-- 886 486 -->
+               <pos>0 0.263888888888889</pos><!-- 0 190 -->
+            </video>
+         </view>
+      </aspectRatio>
+      <aspectRatio name="4:3">
+         <view name="system">
+            <image name="background-art">
+               <cropSize>0.589583333333333 0.675</cropSize><!-- 566 486 -->
+               <pos>0 0.263888888888889</pos><!-- 0 190 -->
+            </image>
+         </view>
+         <view name="gamelist">
+            <video name="background-art">
+               <cropSize>0.589583333333333 0.675</cropSize><!-- 566 486 -->
+               <pos>0 0.263888888888889</pos><!-- 0 190 -->
+            </video>
+         </view>
+      </aspectRatio>
+      <aspectRatio name="16:10">
+         <view name="system">
+            <image name="background-art">
+               <cropSize>0.6921875 0.6075</cropSize><!-- 886 486 -->
+               <pos>0 0.2875</pos><!-- 0 230 -->
+            </image>
+         </view>
+         <view name="gamelist">
             <video name="background-art">
                <cropSize>0.6921875 0.6075</cropSize><!-- 886 486 -->
                <pos>0 0.2875</pos><!-- 0 230 -->
