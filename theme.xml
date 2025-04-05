@@ -29,6 +29,40 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
    </colorScheme>
 
    <view name="system,gamelist">
+      <!-- Start: menu styling resets -->
+      <clock name="clock-menu-view">
+         <scope>menu</scope>
+         <origin>0 0</origin>
+         <pos>0.0075 0.01</pos>
+         <backgroundColor>222222</backgroundColor>
+         <color>cccccc</color>
+         <backgroundHorizontalPadding>0.02 0.01</backgroundHorizontalPadding>
+         <backgroundVerticalPadding>0.02 0.01</backgroundVerticalPadding>
+         <backgroundCornerRadius>0.005</backgroundCornerRadius>
+      </clock>
+      <systemstatus name="system-status-menu-view">
+         <scope>menu</scope>
+         <origin>1 0</origin>
+         <pos>0.99 0.01</pos>
+         <backgroundColor>222222</backgroundColor>
+         <color>cccccc</color>
+         <backgroundHorizontalPadding>0.0075 0.02</backgroundHorizontalPadding>
+         <backgroundVerticalPadding>0.02 0.01</backgroundVerticalPadding>
+         <backgroundCornerRadius>0.005</backgroundCornerRadius>
+      </systemstatus>
+      <helpsystem name="help-menu-view">
+         <scope>menu</scope>
+         <origin>0.5 1</origin>
+         <pos>0.5 0.9875</pos>
+         <iconColor>cccccc</iconColor>
+         <textColor>cccccc</textColor>
+         <backgroundColor>222222</backgroundColor>
+         <backgroundHorizontalPadding>0.01 0.01</backgroundHorizontalPadding>
+         <backgroundVerticalPadding>0.015 0.02</backgroundVerticalPadding>
+         <backgroundCornerRadius>0.005</backgroundCornerRadius>
+         <entryRelativeScale>0.9</entryRelativeScale>
+      </helpsystem>
+      <!-- End: menu styling resets -->
       <image name="background-color">
          <origin>0 0</origin>
          <pos>0 0</pos>
@@ -45,11 +79,13 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <zIndex>2</zIndex>
       </image>
       <clock name="clock">
+         <scope>view</scope>
          <pos>0.05 0.085</pos>
          <fontSize>0.036</fontSize>
          <color>111111</color>
       </clock>
       <systemstatus name="system-status">
+         <scope>view</scope>
          <origin>1 0</origin>
          <pos>0.95 0.085</pos>
          <textRelativeScale>0.8</textRelativeScale>
@@ -65,6 +101,7 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <customIcon icon="icon_battery_low">./_inc/images/icon-battery-low.svg</customIcon>
       </systemstatus>
       <helpsystem name="help">
+         <scope>view</scope>
          <origin>0.5 0</origin>
          <textColor>000000</textColor>
          <iconColor>000000</iconColor>
@@ -91,17 +128,6 @@ license:       Attribution-NonCommercial-ShareAlike 2.0 (CC-BY-NC-SA)
          <itemHorizontalAlignment>left</itemHorizontalAlignment>
          <fastScrolling>true</fastScrolling>
       </carousel>
-      <helpsystem name="help-menu-view">
-         <scope>menu</scope>
-         <origin>0.5 0.5</origin>
-         <pos>0.5 0.95</pos>
-         <iconColor>cccccc</iconColor>
-         <textColor>cccccc</textColor>
-         <backgroundColor>181818</backgroundColor>
-         <backgroundHorizontalPadding>0.05 0.05</backgroundHorizontalPadding>
-         <backgroundVerticalPadding>0.05 0.05</backgroundVerticalPadding>
-         <backgroundCornerRadius>0.005</backgroundCornerRadius>
-      </helpsystem>
    </view>
    <variant name="backgroundArtScreenshot,backgroundArtFanart">
       <view name="system,gamelist">
